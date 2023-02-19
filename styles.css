@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+header {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 60%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--gray);
+  font-size: 1.4rem;
+}
+
+h1 span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid var(--pale-blue);
+  padding-left: 20px;
+}
+
+input:focus {
+  outline: 1px solid var(--blue);
+}
+
+button {
+  height: 40px;
+  border-radius: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+button:hover {
+  background-color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#errorText {
+  font-size: 0.8rem;
+  align-self: center;
+  color: var(--light-red);
+  display: none;
+}
+
+.dashboard {
+  width: 85%;
+  margin-bottom: 80px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+li {
+  display: inline-block;
+  border: 0.5px solid lightgray;
+  border-radius: 50%;
+}
+
+a {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--blue);
+
+  height: 30px;
+  width: 30px;
+}
+
+a:hover {
+  background-color: var(--blue);
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+}
+
+footer p {
+  font-size: 0.7rem;
+  color: var(--gray);
+}
+
+@media screen and (min-width: 375px) {
+  header img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+  }
+
+  .input-group {
+    width: 320px;
+  }
+
+  button {
+    align-self: flex-start;
+    width: 150px;
+    height: 45px;
+  }
+
+  #errorText {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .dashboard {
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    font-size: 0.7rem;
+    width: 20px;
+    height: 20px;
+  }
+}
